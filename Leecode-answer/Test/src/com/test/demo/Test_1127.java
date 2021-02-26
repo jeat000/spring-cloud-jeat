@@ -25,7 +25,7 @@ public class Test_1127 {
 
 
 
-        /*Queue stack1 = new LinkedList();
+        Queue stack1 = new LinkedList();
         stack1.offer(1);
         stack1.offer(2);
         stack1.offer(3);
@@ -42,7 +42,7 @@ public class Test_1127 {
         String s = "";
         s.substring(1);
         Map m = new HashMap();Integer.parseInt(s);
-        m.containsKey("");*/
+        m.containsKey("");
 
 
         /*int[] s = new int[]{1,2,3};
