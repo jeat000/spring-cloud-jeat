@@ -1,0 +1,25 @@
+server:
+  port: 8090
+spring:
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://192.168.10.160:3306/test?characterEncoding=utf-8&useUnicode=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+  application:
+    name: service-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+audience:
+  clientId: 098f6bcd4621d373cade4e832627b4f6
+  base64Secret: MDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjYyN2I0ZjY
+  expiresSecond: 3600

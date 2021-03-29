@@ -1,0 +1,19 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: service-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: url-proxy-1
+          uri: https://blog.csdn.net
+          predicates:
+            - Path=/csdn
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848

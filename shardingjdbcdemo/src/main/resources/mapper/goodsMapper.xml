@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.shardingjdbcdemo.mapper.GoodsMapper">
+
+    <select id="selectAll" resultType="java.util.Map">
+        select * from goods
+    </select>
+
+    <select id="getAllGoodsWithUser" resultType="java.util.Map">
+        select a.*,b.user_name from
+        goods a
+        inner join
+        user b
+        on a.user_id = b.id
+    </select>
+
+</mapper>
