@@ -9,7 +9,7 @@ import java.util.List;
  * @Author chenjian
  * @Date 2021-03-09 12:01
  */
-public class Leetcode_0309 {
+public class Leetcode0309 {
     int[][] f;
     List<List<String>> ret = new ArrayList<List<String>>();
     List<String> ans = new ArrayList<String>();

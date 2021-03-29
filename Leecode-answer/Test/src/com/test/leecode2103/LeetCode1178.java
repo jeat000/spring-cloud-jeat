@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class LeetCode_1178 {
+public class LeetCode1178 {
     public List<Integer> findNumOfValidWords(String[] words, String[] puzzles) {
         Map<Integer, Integer> frequency = new HashMap<Integer, Integer>();
 
