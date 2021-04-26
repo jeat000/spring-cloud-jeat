@@ -1,6 +1,9 @@
 package com.test.demo;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class Test {
 
@@ -31,6 +34,7 @@ public class Test {
             //"%md"：输出格式为整形，长度为m（输出最小长度），左对齐
             System.out.println();
         }*/
+
         int i = minCharacters("azzzzz", "azzzzz");
     }
 
