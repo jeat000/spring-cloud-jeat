@@ -1,5 +1,9 @@
 package com.test.leetcode2106;
 
+import java.util.HashSet;
+import java.util.Set;
+import java.util.stream.Collectors;
+
 /**
  * 别乱动我代码，水很深，你把握不住
  *
@@ -23,5 +27,20 @@ public class Leetcode0609 {
             }
         }
         return dp[n][minProfit];
+    }
+
+    public static void main(String[] args) {
+        Set<String> strings = new HashSet<>();
+        strings.add("123");
+        strings.add("1");
+        strings.add("12");
+        strings.add("12");
+        Set<String> strings2 = new HashSet<>();
+        strings2.add("123");
+        strings2.add("1");
+        strings2.add("1");
+        strings2.add("12");
+
+        System.out.println(strings.equals(strings2));
     }
 }
