@@ -48,12 +48,18 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/cglib/cglib  spring自带cglib -->
-        <!--<dependency>
+        <!--线程绑定CPU执行 -->
+        <dependency>
+            <groupId>net.openhft</groupId>
+            <artifactId>affinity</artifactId>
+            <version>3.2.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/cglib/cglib  -->
+        <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib</artifactId>
             <version>3.3.0</version>
-        </dependency>-->
+        </dependency>
 
 
     </dependencies>
