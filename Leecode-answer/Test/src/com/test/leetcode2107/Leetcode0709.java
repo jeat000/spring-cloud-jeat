@@ -1,5 +1,10 @@
 package com.test.leetcode2107;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * 别乱动我代码，水很深，你把握不住
  *
@@ -29,5 +34,25 @@ public class Leetcode0709 {
             }
         }
         return count>nums.length/2 ? temp:-1;
+    }
+
+
+    public static void main(String[] args) {
+        List<String> list = new LinkedList<>();
+        List<String> res = new LinkedList<>();
+        list.add("a");
+        list.add("b");
+        list.add("c");
+        list.add("b");
+        Iterator<String> iterator = list.iterator();
+        while (iterator.hasNext()) {
+            String s = iterator.next();
+            if (s.equals("b")){
+                iterator.remove();
+                res.add(s);
+            }
+        }
+        System.out.println(list);
+        System.out.println(res);
     }
 }
